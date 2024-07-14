@@ -21,6 +21,12 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -72,4 +78,35 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+/* Search bar section */
+#search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#search-bar {
+    font-family: 'Cabin';
+    padding: 10px;
+    border: 2px solid #a8b0bc;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#search-button {
+    font-family: 'Cabin';
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#search-button:hover {
+    box-shadow: 0 0 10px lightblue;
 }
