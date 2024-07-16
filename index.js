@@ -54,9 +54,12 @@ function addGamesToPage(games) {
 
 }
 
+// Filter the games to include only those where the pledged amount is greater than or equal to the goal amount
+const fundedGames = GAMES_JSON.filter(game => game.pledged >= game.goal);
+
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
-addGamesToPage(GAMES_JSON)
+addGamesToPage(fundedGames)
 
 /*************************************************************************************
  * Challenge 4: Create the summary statistics at the top of the page displaying the
